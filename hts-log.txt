@@ -1,0 +1,11 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 07 Oct 2025 19:00:33 at https://crediagil.blob.core.windows.net/web/b.html?fbclid=IwdGRjcANShIFleHRuA2FlbQEwAGFkaWQBqy2tH0YZkgEetpyZB2gaWfNm5qh0NIzVOxqadCP7wz3RCZk_LcRBCkU8DRY-Q9hggwEviYk_aem_R0h156fzHAB_1iEz0A2EFg&utm_medium=paid&utm_source=fb&utm_id=120240036613980002&utm_content=120240036614210002&utm_term=120240036614090002&utm_campaign=120240036613980002 +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F  -%F  -%l "es, en, *" https://crediagil.blob.core.windows.net/web/b.html?fbclid=IwdGRjcANShIFleHRuA2FlbQEwAGFkaWQBqy2tH0YZkgEetpyZB2gaWfNm5qh0NIzVOxqadCP7wz3RCZk_LcRBCkU8DRY-Q9hggwEviYk_aem_R0h156fzHAB_1iEz0A2EFg&utm_medium=paid&utm_source=fb&utm_id=120240036613980002&utm_content=120240036614210002&utm_term=120240036614090002&utm_campaign=120240036613980002 -O1 "C:\Mis lugares Web\bancolombia nuevo 1" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 seconds : 4 links scanned, 3 files written (97199 bytes overall) [36620 bytes received at 12206 bytes/sec], 95256 bytes transferred using HTTP compression in 2 files, ratio 34%
+(No errors, 0 warnings, 0 messages)
